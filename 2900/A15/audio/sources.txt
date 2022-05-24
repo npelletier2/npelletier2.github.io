@@ -1,0 +1,8 @@
+level_complete - https://freesound.org/people/rhodesmas/sounds/320655/
+reset - https://freesound.org/people/yfjesse/sounds/235911/
+hit1, hit2, hit3 - https://freesound.org/people/luongthenguyen1/sounds/463431/
+break1 - https://freesound.org/people/unfa/sounds/221528/
+break2 - https://freesound.org/people/mgamabile/sounds/440773/
+sad_face - https://freesound.org/people/Timbre/sounds/83916/
+
+Some sounds are slightly modified from their originals.
