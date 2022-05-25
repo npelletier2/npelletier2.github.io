@@ -1,0 +1,15 @@
+body{
+    font-family: sans-serif;
+    margin: 2em;
+}
+
+.main-flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-div{
+    width: 70%;
+}
