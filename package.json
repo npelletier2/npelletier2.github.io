@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "node ./compile.js & sass --load-path=node_modules/@picocss/pico/scss/ src/scss/main.scss public/css/main.css",
     "dev": "npm run compile && node ./server.js",
-    "publish": "git subtree push --prefix public origin gh-pages"
+    "publish": "git push && git subtree push --prefix public origin gh-pages"
   },
   "keywords": [],
   "author": "",
