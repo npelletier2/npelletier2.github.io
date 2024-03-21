@@ -1,0 +1,124 @@
+<section id="resume">
+  <div class="borderer start-width start-height"></div>
+  <div class="content start-style">
+    <h2>Resume</h2>
+    <section class="objective">
+      <hgroup>
+        <h3 class="name">{{name}}</h3>
+        <p class="email">{{email}}</p>
+      </hgroup>
+      {{careerObjective}}
+    </section>
+
+    <section class="skills">
+      <h3>Skills</h3>
+      {{#skills}}
+        <div class="item">
+          <div class="borderer start-height"></div>
+          <div class="content start-style">
+            <h4>Languages</h4>
+            <ul>
+              {{#languages}}
+                <li>{{.}}</li>
+              {{/languages}}
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="borderer start-height"></div>
+          <div class="content start-style">
+            <h4>Tools</h4>
+            <ul>
+              {{#tools}}
+                <li>{{.}}</li>
+              {{/tools}}
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="borderer start-height"></div>
+          <div class="content start-style">
+            <h4>Tech Skills</h4>
+            <ul>
+              {{#techSkills}}
+                <li>{{.}}</li>
+              {{/techSkills}}
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="borderer start-height"></div>
+          <div class="content start-style">
+            <h4>Soft Skills</h4>
+            <ul>
+              {{#softSkills}}
+                <li>{{.}}</li>
+              {{/softSkills}}
+            </ul>
+          </div>
+        </div>
+      {{/skills}}
+    </section>
+
+    <section class="education">
+      <h3>Education</h3>
+      {{#education}}
+        <div class="item">
+          <div class="borderer start-height"></div>
+          <div class="content start-style">
+            <h4>{{school}}</h4>
+            <p>{{status}}</p>
+            {{#start}}
+              <p>{{month}}/{{year}} - {{#end}}{{month}}/{{year}}{{/end}}{{^end}}current{{/end}}</p>
+            {{/start}}
+          </div>
+        </div>
+      {{/education}}
+    </section>
+
+    <section class="workExperience">
+      <h3>Work Experience</h3>
+      {{#workExperience}}
+        <div class="item">
+          <div class="borderer start-height"></div>
+          <div class="content start-style">
+            <h4>{{company}}</h4>
+            <p>{{title}}</p>
+            {{#start}}
+              <p>{{month}}/{{year}} - {{#end}}{{month}}/{{year}}{{/end}}{{^end}}current{{/end}}</p>
+            {{/start}}
+            <ul>
+              {{#details}}
+                <li>{{.}}</li>
+              {{/details}}
+            </ul>
+          </div>
+        </div>
+      {{/workExperience}}
+    </section>
+
+    <section class="projects">
+      <h3>Projects</h3>
+      {{#projects}}
+        <div class="item">
+          <div class="borderer start-height"></div>
+          <div class="content start-style">
+            <h4>{{title}}</h4>
+            <p>{{role}}</p>
+            {{#start}}
+              <p>{{month}}/{{year}} - {{#end}}{{month}}/{{year}}{{/end}}{{^end}}current{{/end}}</p>
+            {{/start}}
+            <ul>
+              {{#details}}
+                <li>{{.}}</li>
+              {{/details}}
+            </ul>
+          </div>
+        </div>
+      {{/projects}}
+    </section>
+  </div>
+</section>

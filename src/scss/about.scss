@@ -1,0 +1,32 @@
+#about {
+    .content {
+        transition: opacity 0.6s linear, transform 0.8s var(--bezier-curve);
+
+        &.start-style {
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+    }
+
+    .borderer {
+        border-left: var(--border-style);
+        border-right: var(--border-style);
+        border-top: var(--border-style);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        transition: left 0.3s ease-in, right 0.3s ease-in, bottom 0.5s ease-out;
+
+        &.start-width {
+            left: 50%;
+            right: 50%;
+        }
+
+        &.start-height {
+            bottom: 100%;
+        }
+    }
+}

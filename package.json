@@ -1,0 +1,19 @@
+{
+  "name": "single-page-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node ./compile.js & sass --load-path=node_modules/@picocss/pico/scss/ src/scss/main.scss public/css/main.css",
+    "dev": "npm run compile && node ./server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@picocss/pico": "^2.0.6",
+    "express": "^4.18.3",
+    "glob": "^10.3.10",
+    "mustache": "^4.2.0"
+  }
+}

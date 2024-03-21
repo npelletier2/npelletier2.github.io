@@ -1,0 +1,160 @@
+{
+    "name": "Niko Pelletier",
+    "location": "Amherst, NH",
+    "phone": "603-801-1905",
+    "email": "npelletier3435@gmail.com",
+    "careerObjective": "Recent graduate with a B.S. in Computer Science. Passionate about technology and all of the positive effects it can have. Detail-oriented with a proven track record of learning new technologies quickly and independently as needed.",
+    "skills": {
+        "languages": [
+            "JavaScript",
+            "TypeScript",
+            "HTML/CSS",
+            "SCSS/Sass",
+            "C/C++",
+            "C#",
+            "Java",
+            "Python",
+            "Assembly",
+            "SQL"
+        ],
+        "tools": [
+            "VS Code",
+            "Git",
+            "Node.js",
+            "Express.js",
+            "Vite",
+            "Unity",
+            "LaTeX"
+        ],
+        "techSkills": [
+            "Agile Methodologies",
+            "Object Oriented Programming (OOP)",
+            "Test-Driven Development/Unit Testing",
+            "Technical Writing"
+        ],
+        "softSkills": [
+            "Self-Directed Learning",
+            "Detail-Oriented",
+            "Multi-Disciplinary Teams"
+        ]
+    },
+    "education": [
+        {
+            "school": "Worcester Polytechnic Institute",
+            "status": "B.S. in Computer Science",
+            "start": {
+                "month": 8,
+                "year": 2019
+            },
+            "end": {
+                "month": 5,
+                "year": 2023
+            }
+        }
+    ],
+    "workExperience": [
+        {
+            "company": "ASSISTments",
+            "title": "Data Entry",
+            "start": {
+                "month": 9,
+                "year": 2019
+            },
+            "end": {
+                "month": 5,
+                "year": 2021
+            },
+            "details": [
+                "Created problem sets out of existing math education material for students in elementary and middle school",
+                "Ensured that both my and others' work was accurate and adhered to proper ASSISTments question formatting",
+                "Wrote hints and problem solutions meant to help students better understand problems they were struggling with"
+            ]
+        },
+        {
+            "company": "Hampshire Hills Athletic Club",
+            "title": "Camp Counselor",
+            "start": {
+                "month": 6,
+                "year": 2017
+            },
+            "end": {
+                "month": 8,
+                "year": 2019
+            },
+            "details": [
+                "Supervised a group of about 20 2nd- and 3rd-graders through multiple activities each day",
+                "Often had field trips to nearby locations or days with special activities and events",
+                "Developed positive relationships with children and fellow counselors",
+                "Provided children with opportunities to learn and grow"
+            ]
+        },
+        {
+            "company": "Crumbl Cookies",
+            "title": "Baker",
+            "start": {
+                "month": 10,
+                "year": 2023
+            },
+            "end": null,
+            "details": [
+                "Constantly analyzed the current situation to determine the most needed or valuable task to complete",
+                "Quickly fit in to a team and learned new tasks while working in a fast-paced environment"
+            ]
+        },
+        {
+            "company": "Keep Reading and Learning",
+            "title": "Freelance Game Developer",
+            "start": {
+                "month": 2,
+                "year": 2024
+            },
+            "end": null,
+            "details": [
+                "Finishing development on a game designed to help kindergarden students learn how to spell",
+                "Built in Unity, using the WebGL export feature",
+                "Refactored and expanded upon an already existing project",
+                "Working with a web developer to publish the game on an already existing website"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Prototype Hospital Kiosk Application",
+            "role": "Junior Database Programmer",
+            "start": {
+                "month": 3,
+                "year": 2020
+            },
+            "end": {
+                "month": 4,
+                "year": 2020
+            },
+            "details": [
+                "A prototype application for use on the kiosks in Brigham and Women's hospital, providing patients and visitors with navigation around the hospital and the ability to make various service requests",
+                "Collaborated in a team of 10 using the Agile methodology",
+                "Analyzed user surveys to inform application design",
+                "Designed and implemented a database interface in a sub-team of 3 for the rest of the team to use",
+                "Self-taught SQL for use with the database",
+                "Ensured that the sub-team wrote maintainable, test-driven code"
+            ]
+        },
+        {
+            "title": "Jazz History Database Virtual Museum",
+            "role": "Developer",
+            "start": {
+                "month": 8,
+                "year": 2022
+            },
+            "end": {
+                "month": 5,
+                "year": 2023
+            },
+            "details": [
+                "A virtual reality application for exploring artifacts and information in Worcester Polytechnic Institute's Jazz History Database",
+                "Created weekly goals to facilitate a self-sufficient group",
+                "Surveyed and interviewed users to inform application design",
+                "Wrote the technical specifications for future groups to reference while continuing to expand the museum"
+            ]
+        }
+    ]
+}

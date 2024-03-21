@@ -1,0 +1,104 @@
+#resume {
+    .borderer {
+        border-top: var(--border-style);
+        border-left: var(--border-style);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        transition: left 0.3s ease-in, bottom 1s ease-out;
+
+        &.start-width {
+            left: 100%;
+        }
+
+        &.start-height {
+            bottom: 100%;
+        }
+    }
+
+    .content {
+        transition: opacity 0.6s linear, transform 0.8s var(--bezier-curve);
+
+        &.start-style {
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+
+        .name {
+            display: inline;
+        }
+
+        .email {
+            display: inline;
+            padding-left: 0.5rem;
+        }
+
+        .item {
+            position: relative;
+            padding-left: 0.3rem;
+            margin-bottom: 1rem;
+
+            .borderer {
+                border-top: none;
+                transition: bottom 0.3s ease-in;
+            }
+        }
+
+        .skills {
+            h4 {
+                margin-bottom: 0;
+                margin-top: 0.3rem;
+            }
+
+            ul {
+                padding-top: 0.8rem;
+                padding-left: 0.5rem;
+
+                li {
+                    display: inline-block;
+                    border-left: var(--border-style);
+                    border-bottom: var(--border-style);
+                    margin: 0.1rem;
+                    padding: 0.3rem;
+                    padding-top: 0;
+                    font-family: var(--font-family-mono);
+
+                    &::before {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            margin: 0;
+        }
+
+        p {
+            padding-bottom: 0;
+            padding-left: 1rem;
+            font-family: var(--font-family-mono);
+            color: #{$grey-600};
+        }
+
+        li {
+            margin: 0;
+            list-style: none;
+
+            &::before {
+                content: ">";
+                float: left;
+                margin-left: -0.8em;
+                color: #{$grey-600};
+                font-family: var(--font-family-mono);
+            }
+        }
+    }
+
+    &.print {
+        
+    }
+}

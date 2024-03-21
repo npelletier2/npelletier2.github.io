@@ -1,0 +1,65 @@
+@use "pico";
+@use "colors" as *;
+@import "./navbar.scss";
+@import "./dark-mode-switch.scss";
+@import "./header.scss";
+@import "./about.scss";
+@import "./resume.scss";
+
+:root {
+    --primary: #{$purple-600};
+    --link-hover: #{$purple-500};
+    --box-shadow: #{rgba($purple-600, 0.75)} 0 0 2px 2px;
+    --border-style: 1px solid var(--primary);
+    --bezier-curve: cubic-bezier(.31, .88, .44, 1);
+    --font-family: 'Exo 2', sans-serif;
+    --font-family-mono: 'Space Mono', monospace;
+    font-family: var(--font-family);
+}
+
+main.container {
+    padding: 0;
+
+    &>* {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding-top: 1rem;
+        margin: 0;
+        position: relative;
+
+        p {
+            margin: 0;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+h2,
+h3,
+h4,
+hgroup {
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.borderer {
+    position: absolute;
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    color: var(--primary);
+    text-decoration-color: var(--primary);
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration-color: var(--link-hover);
+}

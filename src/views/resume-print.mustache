@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,600&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Niko Pelletier</title>
+</head>
+
+<body>
+
+  <section id="resume" class="print">
+    <div class="content">
+      <section class="objective">
+        <hgroup>
+          <h2 class="name">{{resume.name}}</h3>
+            <p class="email">{{resume.email}}</p>
+        </hgroup>
+        {{resume.careerObjective}}
+      </section>
+
+      <section class="skills">
+        <h3>Skills</h3>
+        {{#resume.skills}}
+          <div class="item">
+            <div class="content">
+              <h4>Languages</h4>
+              <ul>
+                {{#languages}}
+                  <li>{{.}}</li>
+                {{/languages}}
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="content">
+              <h4>Tools</h4>
+              <ul>
+                {{#tools}}
+                  <li>{{.}}</li>
+                {{/tools}}
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="content">
+              <h4>Tech Skills</h4>
+              <ul>
+                {{#techSkills}}
+                  <li>{{.}}</li>
+                {{/techSkills}}
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="content">
+              <h4>Soft Skills</h4>
+              <ul>
+                {{#softSkills}}
+                  <li>{{.}}</li>
+                {{/softSkills}}
+              </ul>
+            </div>
+          </div>
+        {{/resume.skills}}
+      </section>
+
+      <section class="education">
+        <h3>Education</h3>
+        {{#resume.education}}
+          <div class="item">
+            <div class="content">
+              <h4>{{school}}</h4>
+              <p>{{status}}</p>
+              {{#start}}
+                <p>{{month}}/{{year}} - {{#end}}{{month}}/{{year}}{{/end}}{{^end}}current{{/end}}</p>
+              {{/start}}
+            </div>
+          </div>
+        {{/resume.education}}
+      </section>
+
+      <section class="workExperience">
+        <h3>Work Experience</h3>
+        {{#resume.workExperience}}
+          <div class="item">
+            <div class="content">
+              <h4>{{company}}</h4>
+              <p>{{title}}</p>
+              {{#start}}
+                <p>{{month}}/{{year}} - {{#end}}{{month}}/{{year}}{{/end}}{{^end}}current{{/end}}</p>
+              {{/start}}
+              <ul>
+                {{#details}}
+                  <li>{{.}}</li>
+                {{/details}}
+              </ul>
+            </div>
+          </div>
+        {{/resume.workExperience}}
+      </section>
+
+      <section class="projects">
+        <h3>Projects</h3>
+        {{#resume.projects}}
+          <div class="item">
+            <div class="content">
+              <h4>{{title}}</h4>
+              <p>{{role}}</p>
+              {{#start}}
+                <p>{{month}}/{{year}} - {{#end}}{{month}}/{{year}}{{/end}}{{^end}}current{{/end}}</p>
+              {{/start}}
+              <ul>
+                {{#details}}
+                  <li>{{.}}</li>
+                {{/details}}
+              </ul>
+            </div>
+          </div>
+        {{/resume.projects}}
+      </section>
+    </div>
+  </section>
+
+</body>
+
+</html>
