@@ -77,15 +77,17 @@ const headerB = document.querySelector('header .b');
 const headerBBorderer = headerB.querySelector(".borderer");
 const headerBText = headerB.querySelector('p');
 
-headerABorderer.classList.remove('start-height');
-setTimeout(() => {
-    headerABorderer.classList.remove('start-width');
-    headerAText.classList.remove('start-opacity');
+window.addEventListener('load', () => {
+    headerABorderer.classList.remove('start-height');
     setTimeout(() => {
-        headerBBorderer.classList.remove('start-height');
-        headerBText.classList.remove('start-opacity');
-    }, 300);
-}, 400);
+        headerABorderer.classList.remove('start-width');
+        headerAText.classList.remove('start-opacity');
+        setTimeout(() => {
+            headerBBorderer.classList.remove('start-height');
+            headerBText.classList.remove('start-opacity');
+        }, 300);
+    }, 400);
+});
 
 // Navbar fade in
 
