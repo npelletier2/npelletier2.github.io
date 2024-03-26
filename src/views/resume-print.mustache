@@ -17,15 +17,16 @@
     <div class="content">
       <section class="objective">
         <hgroup>
-          <h2 class="name">{{resume.name}}</h3>
-            <p class="email">{{resume.email}}</p>
+          <h2 class="name">{{name}}</h2>
+          <p class="subheader">{{email}}</p>
+          <p class="subheader">npelletier2.github.io</p>
         </hgroup>
-        {{resume.careerObjective}}
+        {{careerObjective}}
       </section>
 
       <section class="skills">
         <h3>Skills</h3>
-        {{#resume.skills}}
+        {{#skills}}
           <div class="item">
             <div class="content">
               <h4>Languages</h4>
@@ -69,12 +70,12 @@
               </ul>
             </div>
           </div>
-        {{/resume.skills}}
+        {{/skills}}
       </section>
 
       <section class="education">
         <h3>Education</h3>
-        {{#resume.education}}
+        {{#education}}
           <div class="item">
             <div class="content">
               <h4>{{school}}</h4>
@@ -84,32 +85,12 @@
               {{/start}}
             </div>
           </div>
-        {{/resume.education}}
-      </section>
-
-      <section class="workExperience">
-        <h3>Work Experience</h3>
-        {{#resume.workExperience}}
-          <div class="item">
-            <div class="content">
-              <h4>{{company}}</h4>
-              <p>{{title}}</p>
-              {{#start}}
-                <p>{{month}}/{{year}} - {{#end}}{{month}}/{{year}}{{/end}}{{^end}}current{{/end}}</p>
-              {{/start}}
-              <ul>
-                {{#details}}
-                  <li>{{.}}</li>
-                {{/details}}
-              </ul>
-            </div>
-          </div>
-        {{/resume.workExperience}}
+        {{/education}}
       </section>
 
       <section class="projects">
         <h3>Projects</h3>
-        {{#resume.projects}}
+        {{#projects}}
           <div class="item">
             <div class="content">
               <h4>{{title}}</h4>
@@ -124,7 +105,27 @@
               </ul>
             </div>
           </div>
-        {{/resume.projects}}
+        {{/projects}}
+      </section>
+
+      <section class="workExperience">
+        <h3>Work Experience</h3>
+        {{#workExperience}}
+          <div class="item">
+            <div class="content">
+              <h4>{{company}}</h4>
+              <p>{{title}}</p>
+              {{#start}}
+                <p>{{month}}/{{year}} - {{#end}}{{month}}/{{year}}{{/end}}{{^end}}current{{/end}}</p>
+              {{/start}}
+              <ul>
+                {{#details}}
+                  <li>{{.}}</li>
+                {{/details}}
+              </ul>
+            </div>
+          </div>
+        {{/workExperience}}
       </section>
     </div>
   </section>
