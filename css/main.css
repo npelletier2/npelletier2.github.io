@@ -3014,7 +3014,7 @@ header.container h1 span::before, header.container h1 span::after {
 #resume .content .name {
   display: inline;
 }
-#resume .content .email {
+#resume .content hgroup .subheader {
   display: inline;
   padding-left: 0.5rem;
 }
@@ -3067,6 +3067,10 @@ header.container h1 span::before, header.container h1 span::after {
   color: #5e5e5e;
   font-family: var(--font-family-mono);
 }
+#resume.print p {
+  margin: 0;
+}
+
 :root {
   --primary: #9236a4;
   --link-hover: #b645cd;
